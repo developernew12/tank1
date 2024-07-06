@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+}
+
+.lobby {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lobby .icon {
+    margin-right: 10px;
+}
+
+.lobby img {
+    width: 20px;
+    height: 20px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+}
+.categories {
+    width: 200px;
+    height:530px;
+    padding: 20px;
+    background-color: #222;
+   /* border-radius: 10px;*/
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+   
+}
+
+.header .all {
+    cursor: pointer;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  /*  border-bottom: 1px solid #333;*/
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.count {
+    color: #ccc;
+}
+.container{
+    color: white;
+}
+      .button,.provider-list a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color:rgba(117, 28, 28, 0.217);
+        }
+        .main{
+            display:flex;
+        }
+        .container4 {
+    padding: 20px;
+    color: white;
+}
+.logo img{
+    width: 20px;
+    height: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.top-section {
+    margin-bottom: 58px;
+}
+
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game{
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.game img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+.games{
+    max-height: 120px;
+}
+footer {
+    background-color: #0e0d0d;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #f2eeee;
+    padding-bottom: 10px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+.sponsors-section {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.sponsors-section h2 {
+    margin-bottom: 20px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sponsor {
+    text-align: center;
+}
+
+.sponsor img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.sponsor p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+p{
+    color: #ccc;
+}
+.payment-methods {
+            text-align: center;
+        }
+        .payment-methods h2 {
+            margin-bottom: 20px;
+        }
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .payment-icons img {
+            height: 40px;
+            width: auto;
+        }
+        .containerm {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .section h2 {
+            margin-right: 20px;
+        }
+        .icons {
+            display: flex;
+            gap: 20px;
+        }
+        .icons img {
+            height: 40px;
+            width: auto;
+        }
+        .material-icons:hover{
+          color: #ccc;
+        }
+        @media screen and(min-width:600px) {
+        body{
+            font-size:20px;
+        }            
+        }
+        
+   

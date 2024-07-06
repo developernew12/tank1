@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
+}
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 56px;
+    background-color: black;
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 10;
+    color: antiquewhite;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+#bar {
+    font-size: 1.5em;
+    color: #969186;
+    display: none;
+}
+@media (max-width: 1000px) {
+    #bar {
+        display: block;
+        
+    }
+}
+
+.nav-logo {
+    height: 24px;
+    width: 80px;
+    border: 2px solid black;
+}
+
+.logo {
+    height: 24px;
+    width: 80px;
+    background-image: url("https://pm-bet.in/logos/pm-logo.svg");
+    background-size: cover;
+    
+}
+.navbar-link-con{
+    display: flex;
+    width: 70%;
+    margin-left: 50px;
+    
+    justify-content: space-around;
+
+}
+
+.nav-link a {
+    color: #969186;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.search-button {
+    color: #969186;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+/* button */
+
+/* button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+} */
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Login button with a cyan background */
+.login-button button {
+    background-color: #00bcd4;
+    padding: 5px;
+    font-size: smaller;
+}
+
+.login-button button:hover {
+    background-color: #008c9e;
+    box-shadow: 0 0 10px rgba(0, 140, 158, 0.5);
+}
+
+/* Sign Up button with a lime green background */
+.sign-button button {
+    background-color: #8bc34a;
+    padding: 5px;
+    font-size: smaller;
+    text-transform: uppercase;
+    
+}
+
+.sign-button button:hover {
+    background-color: #6fa832;
+    box-shadow: 0 0 10px rgba(111, 168, 50, 0.5);
+}
+@media (max-width: 768px) {
+    .login-button {
+        width: 50%;
+        font-size: 0.5rem;
+        /* position: relative; */
+        /* left:5px; */
+
+    }
+    .sign-button{
+        width: 50%;
+        font-size: 0.5rem;
+    }
+}
+
+/* Dropdown */
+.language-selector {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.language-selector:hover {
+    border-color: #888;
+    background-color: #444;
+}
+
+.language-selector option {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+    .event-link {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .right-sidebar{
+        display: none
+    }
+}
+@media (max-width: 800px) {
+    .sidebar{
+        display: none
+    }
+}
+
+/* menu-bar */
+
+.menu-links{
+    width: 20%;
+    height: auto;
+    
+    padding: 20px;
+    position: fixed;
+    top:50px;
+    /* border: 2px solid rgb(68, 47, 47); */
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #0f0a0b;
+    border-radius: 10px;
+    color: #7B756B;
+    display: none;
+}
+.menu-links .menu-link-ele a{
+    color: #969186;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.menu-links .menu-link-ele{
+    margin-bottom: 10px;
+}
+#bar:hover .menu-links{
+    display: block;
+}
+
+.menu-links .event-link{
+    /* border: 1px solid #7B756B; */
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+
+body{
+    background-color: #EEEDEB;
+}
+.main{
+    display: flex;
+    /* margin-top: 60px; */
+}
+.tournament-heading{
+    
+   /* display: flex;
+   flex-direction: column; */
+   margin-bottom: 10px;
+   margin-left: 5px;
+   color: rgb(125, 121, 121);
+}
+.side-bar{
+    margin-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    flex-direction: column;
+    min-width: max-content;
+    height: 100vh;
+    /* border: 2px solid black; */
+}
+.sidebar-contents{
+    
+}
+
+.side-bar .srilanka-arrow{
+    margin-left: 110px;
+}
+
+.side-bar .india-arrow{
+    margin-left: 140px;
+}
+.sidebar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgb(217, 216, 216);
+}
+.side-bar img{
+    width: 50px;
+}
+.live-events{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.live-events img{
+    width: 30px;
+}
+.live-events .overlap-image{
+    height: max-content;
+    position: absolute;
+    /* border: 2px solid black; */
+}
+.live-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.live-logos{
+    
+    display: flex;
+    gap: 35px;
+    min-width: max-content;
+}
+.live-events-heading{
+    background-color: rgb(217, 216, 216);
+    padding: 10px 20px 20px 20px;
+    
+}
+.live-events-heading a{
+    color: rgb(125, 121, 121);
+    text-decoration: none;  
+}
+.live-events-heading{
+    margin-bottom: 7px;
+}
+.liveevent-timings{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    font-size: small;
+    /* border: 2px solid black; */
+}
+.liveevent-time{
+    padding: 10px;
+}
+
+.liveevent-timings .first-time{
+    background-color: rgb(217, 216, 216);
+    
+}
+.liveevent-timings .last-time{
+    margin-top: 10px;
+}
+.cricket-event{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.cricket-heading{
+    display: flex;
+    align-items: center;
+}
+.title-heading{
+    display: flex;
+    align-items: center;
+}
+.cricket-event .cricket-title-info{
+    /* border: 2px solid black; */
+   
+}
+.cricket-event .teams1{
+    width: 500px;
+    
+    margin-top: 10px;
+    
+}
+.main-score .score1{
+    width: 500px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    /* padding: 16px; */
+}
+.grid-layout .grid-item1,.grid-layout .grid-item6{
+    background-color: rgb(217, 216, 216);
+}
+.grid-layout2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    padding: 0px 16px 16px 16px;
+}
+.grid-layout3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    /* padding: 0px 16px 16px 16px; */
+}
+.grid-layout4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.grid-layout5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.grid-layout5 .grid-item1,.grid-layout5 .grid-item2{
+    background-color: rgb(217, 216, 216);
+    
+}
+.grid-layout4 .grid-item2{
+    
+    background-color: rgb(217, 216, 216);
+}
+.grid-layout4 .grid-item{
+    
+    
+}
+.grid-layout4 .col-span{
+    grid-column: span 2 / span 2;
+}
+/* .grid-layout4 .grid-item:hover{
+    cursor: pointer;
+} */
+.grid-layout4 .row-span{
+    grid-row: span 2 / span 2;
+    background-color: rgb(217, 216, 216);
+}
+.grid-layout4 .grid-item:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.cricket-event .grid-layout5 .grid-item1:hover,.cricket-event .grid-layout5 .grid-item2:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.grid-layout3 .grid-items{
+    background-color: rgb(217, 216, 216);
+}
+.grid-layout3 .grid-items:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.grid-layout2 .grid-item{
+   
+    margin-left: 100px;
+}
+.grid-layout .grid-item{
+   
+}
+.span-row {
+    grid-row: span 2 / span 2;
+}
+.col-span{
+    grid-column: span 3;
+}
+.span-row:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.betslip{
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    width: 400px ;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-left: 15px;
+}
+
+       .live-logos{
+        display: flex;
+        min-width: max-content;
+        align-items: center;
+        gap: 20px; 
+    } 
+    footer{
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(223, 211, 211);
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: white;
+    }
+    .popular-event-sec{
+        border-radius: 5px;
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+    .popular-head{
+        font-size: 16px;
+        color: #292621;
+        font-weight: bolder;
+        /* padding: 20px; */
+        border-radius: 5px;
+        margin-bottom: 10px;
+    
+        
+    }
+    .popular-body{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .popular-body li{
+        list-style-type: none;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    .pop-lis{
+        color:#7B756B;
+        font-size: 12px;
+    }
+    .pop-lis .pop-head{
+        font-size: 16px;
+        color: #292621;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    .popular-event-sec .sponsors-ele .sponsors img{
+        width: 100px;
+        height: 40px;
+    }
+    .sponsors-ele{
+        display: flex;
+        /* margin-left: 20px; */
+        margin-bottom: 20px;
+        /* margin-left: 10px; */
+    }
+    .sponsors{
+        margin-left: 20px;
+    }
+    .popular-event-sec .sponsors-ele .sponsors-pay img{
+        width: 46px;
+        height: 32px;
+        margin-left: 20px;
+    }
+    .sponsors-ele .social-ele img{
+        width: 20px;
+        height: 22px;
+        margin-left: 20px;
+    }
+    .sponsors-ele .licence-ele img{
+        width: 34px;
+        height: 34px;
+        margin-left: 20px;
+    }
+    .content{
+        padding: 30px;
+    }
+    
+    /* footer media queries */
+    /* Media Queries for Tablet */
+    @media (max-width: 1024px) {
+        .popular-body {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .popular-body li {
+            text-align: center;
+        }
+    
+        .sponsors-ele .sponsors {
+            margin-left: 10px;
+        }
+    }
+    
+    /* Media Queries for Phone */
+    @media (max-width: 768px) {
+        .popular-event-sec {
+            padding-left: 20px;
+        }
+    
+        .popular-body {
+            flex-wrap: wrap;
+        }
+    
+        .popular-body li {
+            width: 50%;
+            text-align: center;
+        }
+    
+        .sponsors-ele .sponsors {
+            margin-left: 10px;
+        }
+    
+        .sponsors-ele .social-ele img {
+            margin-left: 10px;
+        }
+    
+        .sponsors-ele .licence-ele img {
+            margin-left: 10px;
+        }
+    }
+    
+    /* Media Queries for Tablet */
+    @media (max-width: 1024px) {
+        .sponsors-ele {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .sponsors {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    /* Media Queries for Phone */
+    @media (max-width: 768px) {
+        .sponsors-ele {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .sponsors {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    
+        .sponsors img {
+            width: 80px; /* Adjust image size for smaller screens if necessary */
+            height: auto;
+        }
+    }
+    
+     @media (min-width: 1024px) {
+        .logo-item:nth-child(n+10) {
+            
+        }
+    } 
+    @media (max-width: 1440px){
+        .logo-item:nth-child(n+10) {
+            display: none; 
+        }
+        .side-bar{
+            min-width: 250px;
+            height: max-content;
+        }
+        .ml-3{
+            margin-left: 1px;
+        }
+         #sri-lanka{
+            height: 30px;
+            
+        }
+        .grid-layout .flex{
+            align-items: center;
+        }
+    }
+    @media (max-width: 768px) {
+         .side-bar{
+            display: none;
+        }
+        .logo-item:nth-child(n+10) {
+            display: none;
+         } 
+         .betslip{
+            display: none;
+        }
+        .live-events-heading{
+           width: max-content;
+           
+        } 
+    }
+    @media (max-width: 320px){
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: none;
+        }
+         .side-bar{
+            display: none;
+        }
+        .logo-item:nth-child(n+4) {
+            display: none;   
+        } 
+    
+         .liveevent-time{
+            gap: 1px;
+            padding: 2px;
+        }
+        .live-logos{
+            gap: 15px;
+        }
+        .live-events{
+            margin-left: 25px;
+            margin-top: 30px;
+            
+        }
+        
+        .liveevent-timings .last-time{
+            margin-top: 2px;   
+        }
+        .liveevent-timings{
+           
+            gap: 7px;
+           
+        }
+        .cricket-event{
+            font-size: x-small;
+            width: 270px;
+            padding-left: 5px;
+                
+        } 
+        .cricket-event .cricket-title{
+            font-size: smaller;
+        }
+        .cricket-event .grid-layout .grid-item6,.cricket-event .grid-layout .grid-item1,.cricket-event .grid-layout2{
+            display: none;
+            font-size: x-small;
+        }
+        .grid-layout .fa-solid{
+            display: none;
+        } 
+        .grid-layout{
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-layout3 .grid-items{
+            margin-top: 10px;
+            font-size: medium;
+        }
+        .grid-layout4{
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-layout4 .row-span{
+            display: none;
+        }
+        #responsive {
+            display: none;
+        } 
+        .betslip{
+            display: none;
+        }
+     }
+@media(max-width:300px){
+    .betslip{
+        display: none;
+    }
+}
+@media(max-width:200px){
+    .betslip{
+        display: none;
+    }
+}
+    
